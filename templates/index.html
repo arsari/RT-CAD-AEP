@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Analytics Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Customer Analytics Dashboard</h1>
+
+      <h2>Overall Metrics</h2>
+      <div id="metrics">
+        <p>Overall Conversion Rate: <span id="conversion-rate"></span>%</p>
+        <p>Active Users: <span id="active-users"></span></p>
+        <p>Dropoff Rate: <span id="dropoff-rate"></span>%</p>
+      </div>
+
+      <h2>Customer Segments</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Segment</th>
+            <th>Conversion Rate</th>
+          </tr>
+        </thead>
+        <tbody id="customer-table"></tbody>
+      </table>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+
+</html>
