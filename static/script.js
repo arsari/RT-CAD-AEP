@@ -1,8 +1,7 @@
 // Fetch data from the backend API
 async function fetchCustomerData() {
   const response = await fetch('/api/data');
-  const data = await response.json();
-  return data;
+  return response.json();
 }
 
 // Update the metrics and customer table dynamically
@@ -27,7 +26,7 @@ function updateDashboard(data) {
 }
 
 // Fetch data on page load and update the dashboard
-window.onload = async function () {
+window.onload = async () => {
   const data = await fetchCustomerData();
   updateDashboard(data);
 };
